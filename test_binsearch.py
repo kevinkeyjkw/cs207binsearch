@@ -17,8 +17,8 @@ def test_one():
 def test_two():
 	assert binary_search(two, 2) ==0 
 
-def test_unordered():
-	assert binary_search(unordered, 4) == 1
+# def test_unordered():
+# 	assert binary_search(unordered, 4) == 1
 
 def test_invalid_left_right():
     assert binary_search(ordered, 5,left=-1, right=-2) == -1
