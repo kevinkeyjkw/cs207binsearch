@@ -16,12 +16,15 @@ def binary_search(da_array: list, needle, left:int=0, right:int=-1):
         midpoint = rangemin + (rangemax - rangemin)//2
         if da_array[midpoint] > needle:#lower part
             rangemax = midpoint - 1
+            print("1!")
         elif da_array[midpoint] < needle:
             rangemin = midpoint + 1
+            print("2!")
         else:
             index = midpoint
             return index
 
+# binary_search([1,2,5,7,8,9], 7)
 # ordered = [1,2,5,7,8,9]
 # multiple = [1,1,1,1,2,2,2,3]
 # unordered = [2,5,3,5,3,4,8]
