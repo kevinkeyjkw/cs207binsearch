@@ -11,6 +11,11 @@ nonNumeric = ['a', 'b']
 nan = [float('nan')]
 negative = [-6,-4,-2,-1,0,1,2,4]
 
+def test_one():
+	assert binary_search(one, 1) == 0
+
+def test_two():
+	assert binary_search(two, 2) ==0 
 
 def test_invalid_left_right():
     assert binary_search(ordered, 5,left=-1, right=-2) == -1
